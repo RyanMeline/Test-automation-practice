@@ -4,18 +4,8 @@ on:
     branches: ['**']
 
 jobs:
-  setup:
+  unit-test:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Go Setup
-        uses: actions/setup-go@v5
-        with:
-          go-version: '1.26.5'
-  test:
-    runs-on: ubuntu-latest
-    needs: setup
     steps:
       - uses: actions/checkout@v4
 
