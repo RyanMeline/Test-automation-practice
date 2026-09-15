@@ -72,7 +72,4 @@ func TestIndexGitHubRepositoriesByOrg_empty(t *testing.T) {
   t.Errorf("expected result map to have zero keys, but it has %d keys", k)
  }
 
- if k := len(result); k == 0 {
-  t.Errorf("expected result map to have zero keys, but it has %d keys", k)
- }
 }
